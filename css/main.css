@@ -1,0 +1,197 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: light;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+:root
+{
+	background: #000;
+}
+/*links in the site*/
+a
+{
+	color: #00ffc2;
+	text-decoration: none;
+	font-family: bold;
+	transition: transform 1s;
+}
+/*fonts*/
+@font-face
+{
+	font-family: light;
+	src: url("../fonts/light.ttf");
+}
+@font-face
+{
+	font-family: bold;
+	src: url("../fonts/bold.ttf");
+}
+h1, h2, h3, h4, h5, h6, b, strong, .bold
+{
+	font-family: bold;
+}
+
+body
+{
+	background-image: url("../img/pattern4.png");
+	background-size: 100px;
+	background-attachment: fixed;
+	color: #fff;
+}
+div
+{
+	padding: 0 10px;
+}
+.gold
+{
+	background: linear-gradient(to left top, #ff0, #ff712d, #ffa700, #ff0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.lang, #lbtn1, #lbtn2
+{
+	background: #000;
+	border-image-source: linear-gradient(30deg, #ff0 0%, #ff712d 50%, #ff0 100%);
+	border-image-slice: 1;
+}
+
+/* personal Information */
+.firstR
+{
+	padding: 20px 10px; 
+	line-height: 20px;
+	background: linear-gradient(to left top, #ff0, #ff712d, #ffa700, #ff0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.firstR a, .firstR p, .blue
+{
+	font-family: light;
+	background: linear-gradient(-30deg, #93d8d4, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pNo
+{
+	display: inline;
+	position: relative;
+	top: -16px;
+}
+.email, .linkedin, .location
+{
+	display: inline;
+	position: relative;
+	top: -6px;
+}
+
+/* work experience section */
+.WE
+{
+	width: 100%;
+}
+ul li
+{
+	list-style: none;
+}
+li::before
+{
+	content: ' ';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-image: url("../img/dot.png");
+	background-size: contain;
+	margin-right: 5px;
+}
+li::first-letter
+{
+	font-size: 6em;
+	font-family: myCursive;
+}
+.title 
+{
+	border-left: 10px solid transparent;
+	border-image-source: linear-gradient(to left top, #ff0, #ff712d, #ffa700, #ff0);
+	border-image-slice: 1;
+	padding: 15px 15px 15px 9px;
+}
+
+/* Slkills */
+.slider
+{
+	border-radius: 20px;
+	height: 30px;
+	margin: 10px 0;
+	background: linear-gradient(to right bottom, #ffa500 30%, #ff0);
+	text-align: center;
+	color: #000;
+}
+.slider1
+{
+	width: 100%;
+}
+.slider2
+{
+	width: 95%;
+}
+.slider3
+{
+	width: 88%;
+}
+.slider4
+{
+	width: 85%;
+}
+.slider5
+{
+	width: 90%;
+}
+
+/* copyrights */
+.last
+{
+	background: #000;
+	width: 100%;
+}
+
+/*copyrights*/
+.copyrights
+{
+	background: #000;
+	color: #fff;
+	padding: 20px;
+	margin-top: -10px;
+	z-index: 3;
+	position: relative; 
+}
+.Clogo
+{
+	width: 100%;
+}
+/* Desktop view */
+@media screen and (min-width: 980px)
+{
+	.firstR
+	{
+		text-align: left;
+		width: 60%;
+	}
+	.contactInfo
+	{
+		position: absolute; 
+		top: 20px;
+		right: 20px;
+	}
+	.WE, .skills, .edu, .cong
+	{
+		width: 50%;
+		float: left;
+	}
+	.last
+	{
+		padding: 0 20%;
+	}
+}
